@@ -4,12 +4,16 @@ FROM python:3.8-alpine
 #MAINTAINER
 MAINTAINER Wellington Oliveira "oliveira@woliveira.net"
 
-COPY . /app
+COPY ./requirements.txt /requirements.txt
 
-WORKDIR /app
+WORKDIR /
 
 RUN pip install -r requirements.txt
 
+COPY . /
+
 ENTRYPOINT ["python"]
 
-CMD ["app.py"]
+CMD ["api1.py"]
+
+

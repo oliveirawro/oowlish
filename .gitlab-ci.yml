@@ -1,0 +1,5 @@
+# Use this file as a starting point to create
+# a GitLab CI pipeline to test and build the Flask API.
+#
+# Bonus point: push the built image to GitLab or Docker's
+# public registry.
